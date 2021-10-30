@@ -12,6 +12,7 @@ func main()  {
 
 func threeSum(nums []int) [][]int {
 	sort.Ints(nums)
+
 	fmt.Println(nums)
 	print(nums)
 	ans := make([][]int,0)
