@@ -10,7 +10,7 @@ var hash = map[string]string{
 	"8": "tuv",
 	"9": "wxyz",
 }
-var ans []string
+//var ans []string
 
 func letterCombinations(digits string) []string {
 
