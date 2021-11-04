@@ -44,11 +44,6 @@ func partition(arr []int, start int, end int) int {
 		arr[right], arr[left] = arr[left], arr[right]
 	}
 	arr[start], arr[left] = arr[left], arr[start]
-	//count++
-	//fmt.Println("count: ", count)
-	//fmt.Println("arr: ", arr)
-	//fmt.Println("right:", right, ", left:", left)
-	//return left
 
 	return right
 }
