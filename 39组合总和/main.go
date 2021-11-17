@@ -7,6 +7,7 @@ import (
 func combinationSum(candidates []int, target int) [][]int {
 	qsort(candidates,0,len(candidates)-1)
 	//sort.Ints(candidates)
+	fmt.Println("sort")
 	fmt.Println(candidates)
 	res :=[][]int{}
 
@@ -28,7 +29,7 @@ func dfs(candidates []int,target int,nums []int,start int,res *[][]int){
 		if target <candidates[i]{
 			return
 		}
-		dfs(candidates,target-candidates[i],append(nums,candidates[i]),i+1,res)
+		dfs(candidates,target-candidates[i],append(nums,candidates[i]),i,res)
 	}
 }
 
@@ -59,6 +60,6 @@ func partition(arr []int,start,end int)int{
 }
 
 func main() {
-	res := combinationSum([]int{2,3,6,7},7)
+	res := combinationSum([]int{10,1,2,7,6,1,5,8},8)
 	fmt.Println(res)
 }
