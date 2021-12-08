@@ -18,5 +18,6 @@ func climbStairs(n int) int {
 		a = b
 		b = ans
 	}
+
 	return ans
 }
