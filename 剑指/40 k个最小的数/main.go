@@ -1,6 +1,9 @@
 package main
 
-
+type se struct {
+	a []int
+	aa []int
+}
 func getLeastNumbers(arr []int, k int) []int {
 	start,end := 0,len(arr)-1
 	temp := 0
